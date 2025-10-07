@@ -1,0 +1,226 @@
+.delivery {
+    background-color: #F4F6F8;
+    width: 100%;
+    height: 100%;
+    padding: 5em 0;
+}
+.delivery-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+.delivery-container h2 {
+    font-family: 'Inter';
+    font-weight: 800;
+    font-size: 44px;
+    line-height: 54px;
+    letter-spacing: 0%;
+}
+.delivery-container p {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0%;
+}
+.delivery-container button {
+    width: 235px;
+    height: 56px;
+    background-color: #F50E30;
+    border-radius: 8px;
+    transition: all 0.1s ease;
+    
+    color: #FFFFFF;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0%;
+}
+.delivery-container button:hover {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.delivery-content {
+    margin-top: 3em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.delivery-item {
+    width: 410px;
+    height: 264px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    filter: drop-shadow(0px 2px 16px #00000014);
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1em;
+}
+.item-title {
+    margin: 1em;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 36px;
+    letter-spacing: 0%;
+}
+.item-text {
+    margin: 0 1em;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0%;
+}
+.item-key {
+    position: absolute;
+    left: 287px;
+    top: 164px;
+    width: 84px;
+    height: 92px;
+}
+.item-car {
+    position: absolute;
+    left: 184px;
+    top: 144px;
+    width: 220px;
+    height: 120px;
+}
+.item-coins {
+    position: absolute;
+    left: 184px;
+    top: 134px;
+    width: 222px;
+    height: 127px;
+}
+.delivery-desctop {
+    display: block;
+}
+.delivery-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 1440px) {
+    .delivery-container h2 {
+        font-size: 32px;
+    }
+    .delivery-container p {
+        font-size: 20px;
+    }
+    .delivery-container button {
+        width: 195px;
+        height: 40px;
+        font-size: 15px;
+    }
+    .item-title {
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .delivery-item {
+        width: 340px;
+        height: 200px;
+        gap: 0px;
+    }
+    .item-title {
+        margin: 0 0 5px 10px;
+    }
+    .item-key {
+        top: 100px;
+        left: 240px;
+    }
+    .item-car {
+        top: 90px;
+        left: 135px;
+    }
+    .item-coins {
+        top: 78px;
+        left: 120px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .delivery {
+        padding: 3em 0;
+    }
+    .delivery-container h2, .item-title{
+        font-size: 24px;
+    }
+    .delivery-container p {
+        font-size: 17px;
+    }
+    .delivery-content {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1em;
+    }
+}
+@media screen and (max-width: 768px) {
+    .delivery-container h2 {
+        line-height: 36px;
+        text-align: center;
+        font-size: 28px;
+        font-weight: 800;
+    }
+    .delivery-container p {
+        text-align: center;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+    }
+    .item-title {
+        margin: 15px 0 15px 150px;
+    }
+    .item-key {
+        width: 72px;
+        height: 63px;
+        top: 7px;
+        left: 15px;
+    }
+    .item-car{
+        width: 120px;
+        height: 65px;
+        top: 10px;
+        left: 10px;
+    }
+    .item-coins {
+        width: 102px;
+        height: 66px;
+        top: 20px;
+        left: 10px;
+    }
+    .delivery-desctop {
+        display: none;
+    }
+    .delivery-mobile {
+        display: block;
+        background-color: #F50E30;
+        width: 312px;
+        height: 64px;
+        border-radius: 8px;
+        margin: 1em 0;
+        cursor: pointer;
+
+        font-family: 'Roboto';
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        letter-spacing: 0%;
+        color: #FFFFFF;
+    }
+    .delivery-mobile:hover {
+        background-color: #F4F6F8;
+        color: #000000;
+    }
+}
+@media screen and (max-width: 320px) {
+    
+}

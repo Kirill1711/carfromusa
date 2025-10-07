@@ -1,0 +1,204 @@
+.car-delivery {
+    padding: 4em 0;
+    background-color: #F4F6F8;
+}
+.car-delivery h2{
+    margin: 1em 0;
+    font-size: 44px;
+    font-weight: 800;
+    color: #000000;
+    font-family: 'Inter';
+    letter-spacing: 54px;
+    letter-spacing: 0;
+}
+.car-delivery h4 {
+    margin: 0 0 1em 0;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0%;
+}
+
+.swiper-cars {
+    overflow: hidden;
+}
+
+
+.slidebuttons  {
+    position: relative;
+    top: -320px;
+}
+.swiper-button-prev, .swiper-button-next {
+    background-color: #FA002C;
+    border-radius: 100%;
+    color: #FFFFFF;
+    width: 60px;
+    height: 60px;
+}
+.swiper-button-prev:hover, .swiper-button-next:hover {
+    background-color: #F4F6F8;
+    color: #000000;
+}
+
+.delivery-slide {
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    padding: 1em;
+}
+.delivery-slide img {
+    width: 360px;
+    height: 260px;
+    border-radius: 12px;
+    margin: 25px 0 0 26px;
+}
+.swiper-title {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0%;
+    margin: 10px 0;
+}
+.item-character {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.item-character div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    color: #00000080;
+    justify-content: space-between;
+}
+.item-character span {
+    width: 55%;
+    height: 1px;
+    border: 1px dashed #C1C1C1;
+    margin-top: 10px;
+}
+.item-character div  b {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+.item-price {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.item-price div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0%;
+    color: #000000;
+}
+.item-price span {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #000000;
+    width: 30%;
+}
+.red-price {
+    color: #FA002C !important;
+}
+.delivery-slide button {
+    width: 360px;
+    height: 56px;
+    background-color: #FA002C;
+    border-radius: 10px;
+
+    color: #FFFFFF;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+}
+.delivery-slide button:hover {
+    background-color: #F4F6F8;
+    color: #000000;
+}
+
+@media screen and (max-width: 1440px) {
+      .car-delivery h2 {
+        font-size: 32px;
+    }
+    .car-delivery h4 {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .delivery-slide img {
+        margin: 5px 0 5px 5px;
+    }
+    .item-character span {
+        width: 40%;
+    }
+    .delivery-slide button {
+        width: 260px;
+        height: 50px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .car-delivery {
+        padding: 2em 0;
+    }
+    .item-price span {
+        width: 60%;
+    }
+
+}
+@media screen and (max-width: 990px) {
+    .car-delivery h2 {
+        font-size: 28px;
+        line-height: 32px;
+    }
+    .car-delivery h4 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .swiper-title {
+        font-size: 24px;
+        line-height: 36px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .slidebuttons {
+        display: none;
+    }
+    .swiper-slide {
+        display: flex;
+        flex-direction: column;
+    }
+    .swiper-slide img {
+        margin: auto;
+    }
+    .swiper-slide button {
+        margin: auto;
+        width: 312px;
+        height: 64px;
+    }
+}
+@media screen and (max-width: 550px) {
+    .item-price div {
+        font-size: 14px;
+    }
+}

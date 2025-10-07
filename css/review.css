@@ -1,0 +1,218 @@
+.review {
+    background-color: #F4F6F8;
+    width: 100%;
+    height: 100%;
+    padding: 4em 0;
+}
+.review h2 {
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 54px;
+    margin-bottom: 1.5em;
+}
+.swiper-review {
+    width: 60%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slidebuttons  {
+    position: relative;
+    top: -160px;
+} 
+
+
+.review-telegram {
+    margin-top: 3em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2em;
+    justify-content: center;;
+}
+.telegram-container {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+.telegram-container h3{
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 54px;
+}
+.telegram-container button {
+    width: 312px;
+    height: 54px;
+    background-color: #F50E30;
+    border-radius: 8px;
+
+    color: #FFFFFF;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    transition: all 0.1s ease;
+}
+.telegram-container button:hover {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.slider-review {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  padding-bottom: 1.5em;
+}
+.swiper-pagination {
+    bottom: -10px;
+}
+.swiper-pagination-bullet {
+    width: 70px;
+    height: 5px;
+    border-radius: 10px;
+    background-color: #000000;
+}
+.swiper-pagination-bullet-active {
+    background-color: #F50E30;
+}
+
+.reviev-item {
+    text-align: center;
+    opacity: 0.3;
+    transform: scale(0.8) !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s all;
+}
+.reviev-car {
+    width: 90%;
+    height: auto;
+    border-radius: 20px;
+    position: relative;
+    background-color: #000000;
+}
+.swiper-slide-next,
+.swiper-slide-duplicate-active,
+.swiper-slide-duplicate-next {
+  opacity: 1;
+  transform: scale(1) !important;
+  border-radius: 20px;
+}
+.reviev-item p {
+    font-size: 24px;
+    line-height: 36px;
+    font-family: 'Inter';
+    margin-top: 1em;
+}
+
+.youtube-btn {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    cursor: pointer;
+    transition: all 0.1s ease;
+    z-index: 100;
+    top: 40%;
+    left: 50%;
+    margin-right: -55%;
+    transform: translate(-50%, -50%);
+}
+.reviev-button {
+    left: 150px;
+    position: absolute;
+    color: #FFFFFF;
+    font-size: 39px;
+    font-weight: 700;
+    width: 1100px;
+    display: flex;
+    justify-content: space-between;
+}
+.reviev-button button {
+    width: 63px;
+    height: 63px;
+    border-radius: 50%;
+    background-color: #F50E30;
+}
+.reviev-button button:hover {
+    color: #000000;
+    background-color: #F4F6F8;
+}
+
+@media screen and (max-width: 1440px) {
+    .review h2, .telegram-container h3 {
+        font-size: 32px;
+    }
+    .reviev-item p {
+        font-size: 22px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .youtube-btn {
+        top: 35%;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .youtube-btn {
+        width: 50px;
+        height: 50px;
+    }
+}
+@media screen and (max-width: 990px) {
+    .youtube-btn {
+        top: 30%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .reviev-item {
+        transform: scale(1);
+        opacity: 1;
+    }
+    .reviev-item p {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .review {
+        padding: 2em 0;
+    }
+    .review h2 {
+        font-size: 28px;
+        line-height: 38px;
+        margin-bottom: 0;
+    }
+    .review-telegram {
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .telegram-container {
+        width: 100%;
+        align-items: center;
+    }
+    .telegram-container h3 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+    .youtube-btn {
+        width: 64px;
+        height: 64px;
+        top: 50%;
+    }
+    .swiper-pagination {
+        display: none;
+    }
+}
+@media screen and (max-width: 550px) {
+    .youtube-btn {
+        top: 40%;
+    }
+}

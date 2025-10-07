@@ -1,0 +1,227 @@
+.compare {
+    width: 100%;
+    height: 100%;
+    background-color: #F4F6F8;
+    padding: 2em 0;
+}
+
+.compare-wrapper {
+    font-family: 'Inter';
+    color: #000000;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    gap: 1.5em;
+}
+.compare-wrapper h2 {
+    font-size: 44px;
+    line-height: 54px;
+    font-weight: 800;
+}
+.compare-wrapper h3 {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 400;
+}
+
+.swiper-compare {
+    overflow: hidden;
+    margin: 2em 0;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    padding-bottom: 2em;
+}
+
+.compare-item {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+}
+.compere-container h3 {
+    font-family: 'Inter';
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 54px;
+    text-align: center;
+    margin: 1em 0;
+}
+.compare-container-item {
+    background-color: #FFFFFF;
+    padding: 1em;
+    border-radius: 20px;
+    filter: drop-shadow(1px 1px 1px #000000);
+}
+.compere-container img {
+    width: 360px;
+    height: 240px;
+    border-radius: 12px;
+}
+.compare-container-item .swiper-title {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 700;
+    font-family: 'Inter';
+}
+
+.versus {
+    width: 64px !important;
+    height: 64px !important;
+    display: block;
+}
+
+.compare-buttons {
+    top: -360px;
+}
+
+.compare-components {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2em 0;
+}
+.components-container {
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    filter: drop-shadow(1px 1px 1px #000000);
+    padding: 1em;
+    font-family: 'Inter';
+    width: 550px;
+    height: 420px;
+    gap: 1em;
+    display: flex;
+    flex-direction: column;
+}
+.components-container h3 {
+    font-size: 44px;
+    line-height: 54px;
+    font-weight: 700;
+}
+.components-text {
+    font-family: 'Inter';
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 400;
+}
+.componets-item {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+
+    font-size: 20px;
+    line-height: 28px;
+    font-family: 'Inter';
+    font-weight: 500;
+}
+.componets-item img {
+    width: 36px;
+    height: 36px;
+}
+.components-container span {
+    font-family: 'Inter';
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 500;
+}
+.components-container p {
+    color: #FA002C;
+    font-size: 48px;
+    line-height: 56px;
+    font-family: 'Inter';
+    font-weight: 700;
+}
+.components-container button {
+    width: 312px;
+    height: 54px;
+    background-color: #FA002C;
+    font-family: 'Roboto';
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #FFFFFF;
+    transition: all 0.1s ease;
+}
+.components-container button:hover {
+    color: #000000;
+    background-color: #F4F6F8;
+}
+
+
+
+@media screen and (max-width: 1440px) {
+    .compare-wrapper h2{
+        font-size: 32px;
+    }
+    .compare-wrapper h3 {
+        font-size: 30px;
+    }
+    .components-container h3 {
+        font-size: 30px;
+    }
+    .components-container {
+        width: 470px;
+        height: 450px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .compare-wrapper h2 {
+        font-size: 28px;
+        line-height: 32px;
+    }
+    .compare-wrapper h3 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .compere-container img {
+        width: 295px;
+        height: 210px;
+    }
+    .components-container {
+        width: 350px;
+    }
+    .components-container h3 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    .components-text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .components-text {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .components-container span {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .components-container p {
+        font-size: 32px;
+        line-height: 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .compare-item {
+        flex-direction: column;
+    }
+    .versus {
+        display: none;
+    }
+    .compare-components {
+        flex-direction: column;
+        gap: 1.5em;
+    }
+    .components-container {
+        width: 100%;
+        height: 100%;
+    }
+    .components-container button {
+        width: 290px;
+    }
+}

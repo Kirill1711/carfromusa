@@ -1,0 +1,155 @@
+header {
+    background-color: #FFFFFF;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 28px;
+}
+.header-logo {
+    width: 60px;
+    height: 60px;
+}
+
+.header-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2em;
+}
+.header-menu a {
+    color: #000000;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 2%;
+}
+.header-menu a:hover, .header-phone a:hover, .burger-inner a {
+    color: #FA002C;
+}
+
+.header-contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+}
+
+.header-messenger {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+    cursor: pointer;
+}
+.header-messenger a {
+    width: 31px;
+    height: 30px;
+    transition: all ease 0.1s;
+}
+.header-telegram {
+    background-image: url('../img/header/telegram.png');
+}
+.header-telegram:hover {
+    background-image: url('../img/header/telegram-hover.png');
+}
+.header-viber {
+    background-image: url('../img/header/viber.png');
+}
+.header-viber:hover {
+    background-image: url('../img/header/viber-hover.png');
+}
+.header-youtube {
+    background-image: url('../img/header/youtube.png');
+}
+.header-youtube:hover {
+    background-image: url('../img/header/youtube-hover.png');
+}
+.header-phone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+}
+.header-phone a {
+    font-size: 18px;
+    font-style: 500;
+    font-family: 'Inter';
+    letter-spacing: 0%;
+    line-height: 100%;
+    color: #000000;
+}
+
+.hamburger-menu {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    display: none;
+}
+.burger-wrapper {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+    padding: 1.5em 0;
+}
+.burger-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+}
+.burger-inner a {
+    color: #000000;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Inter';
+    letter-spacing: 2%;
+    line-height: 100%;
+}
+.burger-phone {
+    width: 24px;
+    height: 24px;
+    margin-right: 1em;
+}
+.burger-messenger {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+}
+
+@media screen and (max-width: 1024px) {
+    .header-menu a, .header-phone a  {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 990px) {
+    .header-menu, .header-messenger, .header-contact {
+        gap: 6px;
+    }
+
+    .header-logo {
+        width: 48px;
+        height: 48px;
+    }
+}
+@media screen and (max-width:768px) {
+    .header-messenger {
+        margin-left: 20em;
+    }
+    .header-menu, .header-phone {
+        display: none;
+    }
+    .hamburger-menu {
+        display: block;
+    }
+}
+@media screen and (max-width:576px ) {
+     .header-messenger {
+        margin-left: 5em;
+    }
+}

@@ -1,0 +1,203 @@
+.buy {
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 100%;
+    padding: 3em 0;
+}
+.buy-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.buy-wrapper h2 {
+    text-align: left;
+    font-family: 'Inter';
+    font-size: 44px;
+    line-height: 54px;
+    font-weight: 700;
+}
+.buy-wrapper span {
+    opacity: 30%;
+    background-color: #000000;
+    width: 100%;
+    height: 1px;
+}
+
+.buy-inner {
+    display: flex;
+    flex-direction: column;
+}
+.buy-table {
+    height: 100%;
+    font-family: 'Inter';
+    margin: 1.5em auto;
+}
+.table-head {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    width: 1200px;
+}
+
+.table-counter {
+    color: #F50E30;
+    font-size: 80px;
+    line-height: 88px;
+    font-weight: 700;
+    width: 100px;
+}
+.table-title {
+    font-weight: 600;
+    color: #000000;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: left;
+    width: 440px;
+}
+.table-elipse {
+    width: 45%;
+    position: relative;
+}
+.table-elipse img {
+    top: -2em;
+    right: 0;
+    position: absolute;
+    cursor: pointer;
+    height: 64px;
+    width: 64px;
+    transition: all 0.1s ease;
+}
+.active-img {
+    transform: rotate(0deg);
+}
+.unactive-img {
+    transform: rotate(180deg);
+}
+
+.table-service {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    margin-left: calc(100px + 1em);
+}
+.table-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    width: 55%;
+}
+.table-text p {
+    margin: 0.5em 0;
+}
+.table-text a img {
+    width: 24px;
+    height: 24px;
+}
+.table-text a {
+    color: #F50E30;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.table-row {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    justify-content: space-between;
+}
+.table-body {
+    width: 1200px;
+    display: none;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+.table-body-active {
+    display: block;
+    opacity: 1;
+}
+@media screen and (max-width: 1440px) {
+    .buy-wrapper h2, .table-title {
+        font-size: 32px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .table-body, .table-head {
+        width: 990px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .table-body, .table-head {
+        width: 768px;
+    }
+}
+@media screen and (max-width: 990px) {
+    .table-row {
+        flex-direction: column;
+    }
+    .table-counter {
+        font-size: 52px;
+        line-height: 52px;
+        font-weight: 700;
+    }
+    .table-title {
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 600;
+        width: 250px;
+    }
+    .table-elipse {
+        width: 50%;
+    }
+    .table-elipse img {
+        width: 44px;
+        height: 44px;
+        top: -1em;
+    }
+    .table-service {
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 500;
+        margin: 1em 0 0 0;
+    }
+    .table-text {
+        font-size: 16px;
+        line-height: 28px;
+        font-weight: 400;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    .table-elipse img {
+        top: -2em;
+    }
+    .table-body, .table-head {
+        width: 440px;
+    }
+    .table-title {
+        width: 150px;
+    }
+    .table-elipse {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 576px) {
+    .table-body, .table-head {
+        width: 310px;
+    }
+    .table-elipse img {
+        top: -2em;
+    }
+    .table-elipse {
+        width: 50px;
+    }
+    .table-title {
+        width: 150px;
+    }
+    .buy {
+        padding: 1.5em 0;
+    }
+}
