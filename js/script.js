@@ -194,3 +194,32 @@ function questuinscloseopen (btns) {
 
 questuinscloseopen(questionplusbtns);
 questuinscloseopen(questionminusbtn);
+
+
+//header
+const openburger = document.querySelector('.hamburger-menu');
+const closeburger = document.querySelector('.hamburger-close');
+
+function openclosebergermenu (btn) {
+  btn.addEventListener('click', function () {
+    if(btn.classList.contains('hamburger-menu') == true) {
+      btn.style.display = 'none';
+      btn.previousElementSibling.classList.add('header-unactive');
+      btn.nextElementSibling.classList.add('header-active');
+      btn.nextElementSibling.classList.remove('header-unactive');
+      btn.parentNode.nextElementSibling.classList.add('header-active');
+      btn.parentNode.nextElementSibling.classList.remove('header-unactive');
+    } else if (btn.classList.contains('hamburger-close') == true) {
+      btn.previousElementSibling.previousElementSibling.classList.add('header-active');
+      btn.previousElementSibling.previousElementSibling.classList.remove('header-unactive');
+      btn.previousElementSibling.style.display = 'block';
+      btn.classList.add('header-unactive');
+      btn.classList.remove('header-active');
+      btn.parentNode.nextElementSibling.classList.remove('header-active');
+      btn.parentNode.nextElementSibling.classList.add('header-unactive');
+    }
+  });
+}
+
+openclosebergermenu(openburger);
+openclosebergermenu(closeburger);
