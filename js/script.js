@@ -199,24 +199,26 @@ questuinscloseopen(questionminusbtn);
 //header
 const openburger = document.querySelector('.hamburger-menu');
 const closeburger = document.querySelector('.hamburger-close');
+const burgerwrapper =document.querySelector('.burger-wrapper');
+const headermessengers = document.querySelector('.header-messenger');
 
 function openclosebergermenu (btn) {
   btn.addEventListener('click', function () {
     if(btn.classList.contains('hamburger-menu') == true) {
-      btn.style.display = 'none';
-      btn.previousElementSibling.classList.add('header-unactive');
-      btn.nextElementSibling.classList.add('header-active');
-      btn.nextElementSibling.classList.remove('header-unactive');
-      btn.parentNode.nextElementSibling.classList.add('header-active');
-      btn.parentNode.nextElementSibling.classList.remove('header-unactive');
+      openburger.style.display = 'none';
+      headermessengers.classList.add('header-unactive');
+      closeburger.classList.add('header-active');
+      closeburger.classList.remove('header-unactive');
+      burgerwrapper.classList.add('header-active');
+      burgerwrapper.classList.remove('header-unactive');
     } else if (btn.classList.contains('hamburger-close') == true) {
-      btn.previousElementSibling.previousElementSibling.classList.add('header-active');
-      btn.previousElementSibling.previousElementSibling.classList.remove('header-unactive');
-      btn.previousElementSibling.style.display = 'block';
-      btn.classList.add('header-unactive');
-      btn.classList.remove('header-active');
-      btn.parentNode.nextElementSibling.classList.remove('header-active');
-      btn.parentNode.nextElementSibling.classList.add('header-unactive');
+      headermessengers.classList.add('header-active');
+      headermessengers.classList.remove('header-unactive');
+      openburger.style.display = 'block';
+      closeburger.classList.add('header-unactive');
+      closeburger.classList.remove('header-active');
+      burgerwrapper.classList.remove('header-active');
+      burgerwrapper.classList.add('header-unactive');
     }
   });
 }

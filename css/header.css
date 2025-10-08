@@ -83,14 +83,15 @@ header {
     color: #000000;
 }
 
-.hamburger-menu {
+.hamburger-menu, .hamburger-close {
     cursor: pointer;
     width: 24px;
     height: 24px;
+}
+.hamburger-menu {
     display: none;
 }
 .burger-wrapper {
-    display: none;
     flex-direction: column;
     align-items: center;
     gap: 1.5em;
@@ -120,6 +121,13 @@ header {
     flex-direction: row;
     align-items: center;
     gap: 1em;
+}
+
+.header-active {
+    display: block;
+}
+.header-unactive {
+    display: none;
 }
 
 @media screen and (max-width: 1024px) {
