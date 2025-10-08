@@ -202,26 +202,29 @@ const closeburger = document.querySelector('.hamburger-close');
 const burgerwrapper =document.querySelector('.burger-wrapper');
 const headermessengers = document.querySelector('.header-messenger');
 
-function openclosebergermenu (btn) {
-  btn.addEventListener('click', function () {
-    if(btn.classList.contains('hamburger-menu') == true) {
-      openburger.style.display = 'none';
-      headermessengers.classList.add('header-unactive');
-      closeburger.classList.add('header-active');
-      closeburger.classList.remove('header-unactive');
-      burgerwrapper.classList.add('header-active');
-      burgerwrapper.classList.remove('header-unactive');
-    } else if (btn.classList.contains('hamburger-close') == true) {
-      headermessengers.classList.add('header-active');
-      headermessengers.classList.remove('header-unactive');
-      openburger.style.display = 'block';
-      closeburger.classList.add('header-unactive');
-      closeburger.classList.remove('header-active');
-      burgerwrapper.classList.remove('header-active');
-      burgerwrapper.classList.add('header-unactive');
-    }
+
+function openburgermenu () {
+  openburger.addEventListener('click', function() {
+    openburger.style.display = 'none';
+    headermessengers.classList.add('header-unactive');
+    closeburger.classList.add('header-active');
+    closeburger.classList.remove('header-unactive');
+    burgerwrapper.classList.add('header-active');
+    burgerwrapper.classList.remove('header-unactive');
   });
 }
 
-openclosebergermenu(openburger);
-openclosebergermenu(closeburger);
+function closeburgermenu () {
+  closeburger.addEventListener('click', function () {
+    headermessengers.classList.add('header-active');
+    headermessengers.classList.remove('header-unactive');
+    openburger.style.display = 'block';
+    closeburger.classList.add('header-unactive');
+    closeburger.classList.remove('header-active');
+    burgerwrapper.classList.remove('header-active');
+    burgerwrapper.classList.add('header-unactive');
+  });
+}
+
+openburgermenu();
+closeburgermenu();
